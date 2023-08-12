@@ -1,4 +1,3 @@
-from tkinter import ON
 from src.generadorOntologico import Recolector
 from src.exploradorRecursos import AdminFuentes
 import json
