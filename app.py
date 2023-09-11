@@ -1,10 +1,12 @@
 from src.generadorOntologico import Recolector
 from src.exploradorRecursos import AdminFuentes
 import json
+from flask_cors import CORS
 from flask import Flask, request, render_template
 from flask_fontawesome import FontAwesome
 
 app = Flask(__name__)
+cors = CORS(app)
 fa = FontAwesome(app)
 
 @app.route('/')
